@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+            mono: ['Rokkitt', 'monospace'],
+          },
+        },
+      }
+        </script>
+        <title>Login Modal</title>
+    </head>
+    <body>
+        <!-- background -->
+        <div class="bg-pink-100 h-screen  w-full flex justify-center items-center ">
+            <!-- card -->
+            <div class="container bg-white rounded-lg  shadow-lg  p-4 flex flex-col md:flex-row">
+                <!-------------------------->
+                <!-- !left side -->
+                <div class="flex flex-col md:w-4/6 ">
+                    <h1 class="font-bold text-2xl ">Login</h1>
+                    <p class="text-black/80 text-sm mt-1   "> Login to your acount to download or upload photo</p>
+                    <!-- input -->
+                    <input
+                        type="email"
+                        class="h-16   mt-10 w-full  outline-none placeholder:text-lg  caret-black/70  p-3  placeholder:p-1    border-2  valid:border-green-400  duration-300   focus:invalid:border-red-400"
+                        required
+                        placeholder="Enter your email address "
+                    >
+                    <!-- forgot pass -->
+                    <a href="#" class="mx-auto font-bold mt-2   text-blue-400 hover:text-blue-600 duration-300">Forgot your password?</a>
+                    <!-- button  -->
+                    <button class="bg-sky-800 text-white mt-12 rounded-lg shadow-lg hover:bg-sky-700 duration-300 p-4"> Next  &nbsp; &#9755;</button>
+                    <!-- border -->
+                    <div class="border-b-2  "> &nbsp;</div>
+                    <p class="text-black/60 font-bold text-sm mt-1 mx-auto">
+                        Or login with
+                    </p>
+                    <button class="border-2 p-3  text-xl font-bold  mt-12 hover:bg-blue-100 hover:border-transparent duration-300">Facebook</button>
+                    <button class="border-2 p-3  text-xl font-bold  mt-4 hover:bg-orange-100 hover:border-transparent duration-300">Google</button>
+                </div>
+                <!-------------------------->
+                <!-- !right side -->
+                <img src="./images/image.jpg" class="hidden md:block lg:w-[430px]  md:w-[300px]  ml-2  " alt="">
+            </div>
+        </div>
+    </body>
+</html>

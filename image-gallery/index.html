@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Image Gallery</title>
+    </head>
+    <body>
+        <!-- !background -->
+        <div class="bg-blue-200 p-4 h-full w-screen">
+            <!-- !container -->
+            <div class="container  mx-auto rounded-xl shadow-xl p-16 bg-white">
+                <!------------------------------------------------->
+                <!-- !nav  -->
+                <ul class="mt-36 text-right">
+                    <li class=" md:inline-block mx-4 hover:border-b-black 
+                    border-b-2 
+                    border-b-white
+                    hover:border-b-2 duration-300">Icons</li>
+                    <li class="md:inline-block mx-4 hover:border-b-black
+                    hover:border-b-2  duration-                     border-b-2 
+                    border-b-white ">Image</li>
+                    <li class="md:inline-block mx-4 hover:border-b-black  hover:border-b-2 duration-                     border-b-2 
+                    border-b-white ">Illustration</li>
+                    <li class="md:inline-block mx-4 hover:border-b-black  hover:border-b-2 duration-                     border-b-2 
+                    border-b-white ">vector</li>
+                </ul>
+                <!------------------------------------------------->
+                <!-- !search input and btn -->
+                <div class="flex flex-col  md:flex-row md:justify-between mt-10">
+                    <!-- !search input -->
+                    <div class=" border-b-2 md:w-1/3 ">
+                        <input class="w-full h-full outline-none border-b-2 border-b-transparent focus:border-b-2 focus:border-b-black duration-200 " type="text" placeholder=" search
+                        "> 
+                    </div>
+                    <!-- !btn -->
+                    <button class="bg-black/80  hover:bg-black duration-300 text-white px-8  py-2  rounded-xl mt-4 md:mt-0  ">Upload</button>
+                </div>
+                <!------------------------------------------------->
+                <!-- !gallery -->
+                    <section class="flex flex-wrap items-center  justify-around  space-y-2  mt-10 ">
+                        <img src="./images/image1.jpg"  class="max-h-48 rounded-md object-fit shadow-xl transform hover:scale-105 duration-300"alt="">
+                        <img src="./images/image2.jpg"  class="max-h-48 rounded-md  shadow-xl transform hover:scale-105 duration-300"alt="">
+                        <img src="./images/image3.jpg"  class="max-h-48 rounded-md  shadow-xl transform hover:scale-105 duration-300"alt="">
+                        <img src="./images/image4.jpg"  class="max-h-48 rounded-md  shadow-xl transform hover:scale-105 duration-300"alt="">
+
+
+
+                    </section>
+
+            </div>
+        </div>
+    </body>
+</html>
